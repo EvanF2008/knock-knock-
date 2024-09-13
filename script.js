@@ -3,6 +3,7 @@
 var who = "wooden shoe";
 var joke = "Wooden shoe like to know!";
 var expected = who + " who?";
+var greeting = ("Hello, im fine");
 
 /* Simple version */
 function knock(){
@@ -10,7 +11,12 @@ function knock(){
   prompt(who);
   alert(joke);
 }
-
+/* greeting */ 
+function friend(){ 
+prompt("hi how are you?");
+var answer = greeting("ight"); 
+prompt("good to know, want to play doom later");
+} 
 /* Better */
 function knockCheck(){
   prompt("Knock Knock!");
@@ -21,8 +27,7 @@ function knockCheck(){
 
 /* Best */
 function knockAgain(){
-  prompt("wanna hear a funny joke?");
-  prompt("well i dont care. Knock Knock!");
+  prompt("Knock Knock!");
   var answer = prompt(who);
   if (answer == expected) alert(joke);
   // this next line is "recursion". 
